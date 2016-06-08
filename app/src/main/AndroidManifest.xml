@@ -3,7 +3,7 @@
     package="ca.martinpouliot.caraudio.caraudiofix">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +21,7 @@
         </activity>
         <activity android:name=".SettingsActivity"></activity>
 
-        <receiver android:name="ca.martinpouliot.caraudio.caraudiofix.BluetoothReceiver">
+        <receiver android:name="ca.martinpouliot.caraudio.caraudiofix.BluetoothReceiver" android:enabled="true">
             <intent-filter>
                 <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
             </intent-filter>
