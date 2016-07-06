@@ -11,6 +11,7 @@ import android.os.Build;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.util.Log;
 
 import java.util.Set;
 
@@ -25,6 +26,7 @@ public class BluetoothReceiver extends BroadcastReceiver {
         boolean autoPlay = sharedPreferences.getBoolean("pref_autoPlay",true);
         boolean nextTrack = sharedPreferences.getBoolean("pref_nextTrack",true);
         boolean maxVolume = sharedPreferences.getBoolean("pref_maxVolume", false);
+        Log.i("BluetoothReceiver","Bluetooth connection detected");
 
         String action = intent.getAction();
         BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);

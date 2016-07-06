@@ -6,7 +6,7 @@
                 <MultiSelectListPreference
                     android:title="Bluetooth Devices"
                     android:key="pref_bluetooth_list"
-                    android:summary="Select the bluetooth device(s) you wish your music starts automatically">
+                    android:summary="Select the bluetooth device(s) you wish your music to start automatically.">
                 </MultiSelectListPreference>
 
 
@@ -16,17 +16,17 @@
         <CheckBoxPreference
             android:title="Auto Play"
             android:key="pref_autoPlay"
-            android:summary="Automatically play music when bluetooth is paired"
+            android:summary="Automatically play music when bluetooth is paired."
             android:defaultValue="true">
         </CheckBoxPreference>
         <CheckBoxPreference
             android:title="Next track after pairing"
             android:key="pref_nextTrack"
-            android:summary="Certain bluetooth devices requires the user to next the track in order for it to update its display informations">
+            android:summary="Certain bluetooth devices requires the user to next the track in order for it to update its display information.">
         </CheckBoxPreference>
         <CheckBoxPreference
             android:title="Max Volume"
-            android:summary="Max out the volume when device is connected"
+            android:summary="Max out the volume when device is connected."
             android:key="pref_maxVolume">
 
         </CheckBoxPreference>
@@ -35,7 +35,7 @@
         android:title="Help">
         <Preference
             android:title="Contact"
-            android:summary="If you have any suggestions or comments regarding the app feel free to contact me">
+            android:summary="If you have any suggestions or comments regarding the app feel free to contact me.">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="http://martinpouliot.ca"
