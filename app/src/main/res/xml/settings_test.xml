@@ -2,15 +2,25 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
-        android:title="Bluetooth">
+        android:title="Triggers">
                 <MultiSelectListPreference
                     android:title="Bluetooth Devices"
                     android:key="pref_bluetooth_list"
                     android:summary="Select the bluetooth device(s) you wish your music to start automatically.">
                 </MultiSelectListPreference>
-
-
+        <MultiSelectListPreference
+            android:title="Wifi hotspot"
+            android:key="pref_wifi_list"
+            android:summary="Select the wifi network you want to define has your home. If your device is still connected, music will not start">
+        </MultiSelectListPreference>
     </PreferenceCategory>
+    <EditTextPreference
+        android:title="Time to wait"
+        android:key="pref_wifi_wait_time"
+        android:numeric="integer"
+        android:defaultValue="300"
+        android:summary="The amount of time in seconds the phone will check if he is in a car or not">
+    </EditTextPreference>
     <PreferenceCategory
         android:title="Music">
         <CheckBoxPreference
